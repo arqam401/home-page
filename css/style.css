@@ -13,10 +13,20 @@ header {
     align-items: center;
     margin-top: 27px;
 }
-#logo {
+@media (max-width: 649px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header nav {
+        margin-top: 34px;
+        width: 100%;
+    }
+}
+#header-img {
     flex-grow: 2;
 }
-#logo img {
+#header-img img {
     max-width: 300px;
 }
 nav {
@@ -105,6 +115,15 @@ iframe {
     margin: 10px;
     border: 1px solid black;
     border-radius: 3px;
+}
+@media (max-width: 799px) {
+    #article-pricing {
+        flex-direction: column;
+    }
+    .product {
+        
+        width: 333px;
+    }
 }
 .product h3 {
     background-color: #ddd;
